@@ -39,7 +39,7 @@ $fullwidth: 100%;
       background-color:$maincolor2;
       width: $fullwidth;
       position: fixed;
-      z-index: 2;
+      z-index: 3;
       p {
           padding: 10px;
           color:$maincolor1;
@@ -57,7 +57,7 @@ $fullwidth: 100%;
       background-color:$maincolor2;
       width: $fullwidth;
       position: fixed;
-      z-index: 2;
+      z-index: 3;
       p {
           padding: 10px;
           color:$maincolor1;
@@ -93,7 +93,7 @@ $fullwidth: 100%;
         margin-top: -500px;
         height:300px;
         position: absolute;
-        z-index:1;
+        z-index:2;
         background-color: $titlebackground;
         border-radius: 20px;
         border-color: $bordercolor;
@@ -108,7 +108,22 @@ $fullwidth: 100%;
         margin-top: -500px;
         height:200px;
         position: absolute;
-        z-index:1;
+        z-index:2;
+        background-color: $titlebackground;
+        border-radius: 20px;
+        border-color: $bordercolor;
+        border: 2px;
+        box-shadow: 5px 5px 2px $boxshadow;
+        line-height: 1.5;
+    }
+}
+
+@media screen and(max-width: 768px) {
+    #mid-block {
+        margin-top: -150px;
+        height:200px;
+        position: absolute;
+        z-index:2;
         background-color: $titlebackground;
         border-radius: 20px;
         border-color: $bordercolor;
@@ -149,7 +164,7 @@ $fullwidth: 100%;
 }
 
 .main-content {
-    height: 1000px;
+    min-height: 1000px;
     width: 100%;
     margin-top: -10px;    /* can minimize the gap when scrolling up and down */
     background-color: $maincolor1;
@@ -183,6 +198,12 @@ $fullwidth: 100%;
         font-weight: bold;
         text-align: center;
     }
+    .main-content-subtitle {
+      color: $maincolor2;
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+    }
 }
 
 label {
@@ -192,7 +213,18 @@ label {
 
 #file-upload {
   color: $maincolor2;
-  
+
+}
+
+.form-control-file {
+  color: $maincolor2;
+}
+
+@media screen and (max-width: 767px) {
+  .btn-top {
+    margin-top: 15px;
+    margin-bottom: 50px;
+  }
 }
 
 /*** Profile Page ***/

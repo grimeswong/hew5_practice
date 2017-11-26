@@ -23,7 +23,7 @@
     background-color: white;
     width: 100%;
     position: fixed;
-    z-index: 2; }
+    z-index: 3; }
     .header p {
       padding: 10px;
       color: #49075e;
@@ -38,7 +38,7 @@
     background-color: white;
     width: 100%;
     position: fixed;
-    z-index: 2; }
+    z-index: 3; }
     .header p {
       padding: 10px;
       color: #49075e;
@@ -69,7 +69,7 @@
     margin-top: -500px;
     height: 300px;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
     border-color: rgba(73, 7, 94, 0.7);
@@ -82,7 +82,20 @@
     margin-top: -500px;
     height: 200px;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    border-color: rgba(73, 7, 94, 0.7);
+    border: 2px;
+    box-shadow: 5px 5px 2px rgba(73, 7, 94, 0.7);
+    line-height: 1.5; } }
+
+@media screen and (max-width: 768px) {
+  #mid-block {
+    margin-top: -150px;
+    height: 200px;
+    position: absolute;
+    z-index: 2;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
     border-color: rgba(73, 7, 94, 0.7);
@@ -115,7 +128,7 @@
     text-align: center; } }
 
 .main-content {
-  height: 1000px;
+  min-height: 1000px;
   width: 100%;
   margin-top: -10px;
   /* can minimize the gap when scrolling up and down */
@@ -142,6 +155,11 @@
     color: white;
     font-size: 2em;
     font-weight: bold;
+    text-align: center; }
+  .main-content-subtitle {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
     text-align: center; } }
 
 label {
@@ -150,5 +168,13 @@ label {
 
 #file-upload {
   color: white; }
+
+.form-control-file {
+  color: white; }
+
+@media screen and (max-width: 767px) {
+  .btn-top {
+    margin-top: 15px;
+    margin-bottom: 50px; } }
 
 /*** Profile Page ***/
