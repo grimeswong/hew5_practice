@@ -15,7 +15,12 @@
     </head>
 
     <body>
-         @yield('content')
+      <div class="header">
+          <p class="col-sm-4 offset-sm-2">University Of Queensland</p>
+      </div> <!-- end of header -->
+
+      @yield('content')
+      
     </body>
 </html>
 

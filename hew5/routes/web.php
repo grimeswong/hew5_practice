@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('main');
 });
+
+Route::post('add_profile_action', function () {
+    return view('profile');
+});

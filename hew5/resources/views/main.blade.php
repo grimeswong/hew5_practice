@@ -6,9 +6,7 @@
 
 @section('content')
 
-            <div class="header">
-                <p class="col-sm-4 offset-sm-2">University Of Queensland</p>
-            </div> <!-- end of header -->
+
             <div>
                 <img id="image" src="img/uq.jpg" />
                 <div class="col-sm-8 offset-sm-2" id="mid-block">
@@ -20,8 +18,8 @@
                 <p class="main-content-title">Researcher Profile</p>
                 <p class="main-content-subtitle">Please enter your profile details<p>
 
-                  <form class="col-md-8 col-sm-12" id="profile-form" method="GET" action="#">  <!-- need to change POST later -->
-
+                  <form class="col-md-8 col-sm-12" id="profile-form" method="POST" action="/add_profile_action">  <!-- need to change POST later -->
+                    {{csrf_field()}}
                     <div class="row">
                       <div class="form-group col-sm-6">
                         <label class="control-label">First Name</label>
