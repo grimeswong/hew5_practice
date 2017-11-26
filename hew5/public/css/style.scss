@@ -1,0 +1,151 @@
+/*** 
+    Author: Shadow Grimes
+
+
+***/
+
+/* Colour */
+$maincolor1: rgb(73, 7, 94);    //purple
+$maincolor2: white;
+$maincolor3: grey;
+$titlebackground: rgba(255,255,255,0.7); // white with opacity
+$bordercolor: rgba(73, 7, 94, 0.7);    // purple with opacity
+$boxshadow: $bordercolor;
+
+
+$fullwidth: 100%;
+
+
+/* First setting clear the user agent default setting */
+/* reset to "0" to avoid broswer setting */
+* {
+    margin:0px auto;
+    padding: 0px;
+}
+
+/*** main page ***/
+.container {
+    margin:0px auto;
+}
+
+.header {
+    height:50px;
+    background-color:$maincolor2;
+    width: $fullwidth;
+    position: fixed;
+    z-index: 2;
+    h4 {
+        padding: 5px;
+        color:$maincolor1;
+        float:left;
+    }
+}
+
+@media screen and(min-width: 768px) {
+    #image {
+        height:700px;
+        width: $fullwidth;
+        position: relative;    /* Must use the relative to make the parallex Scrolling */
+        z-index: -1;
+    }
+}
+
+@media screen and(max-width: 767px) {
+    #image {
+        height:300px;
+        width: $fullwidth;
+        position: relative;    /* Must use the relative to make the parallex Scrolling */
+        z-index: -1;
+    }
+}
+
+@media screen and(min-width: 1201px) {
+    #mid-block {
+        margin-top: -500px;
+        height:300px;
+        position: absolute;
+        z-index:1;
+        background-color: $titlebackground;
+        border-radius: 20px;
+        border-color: $bordercolor;
+        border: 2px;
+        box-shadow: 5px 5px 2px $boxshadow;
+        line-height: 1.5;
+    }
+}
+
+@media screen and(max-width: 1200px) {
+    #mid-block {
+        margin-top: -500px;
+        height:200px;
+        position: absolute;
+        z-index:1;
+        background-color: $titlebackground;
+        border-radius: 20px;
+        border-color: $bordercolor;
+        border: 2px;
+        box-shadow: 5px 5px 2px $boxshadow;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    #mid-title {
+        padding: 75px;
+        font-size: 3em;
+        font-weight: bold;
+        color: $maincolor1;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #mid-title {
+        padding: 20px;
+        font-size: 3em;
+        font-weight: bold;
+        color: $maincolor1;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #mid-title {
+        padding: 20px;
+        font-size: 2em;
+        font-weight: bold;
+        color: $maincolor1;
+        text-align: center;
+    }
+}
+
+#content {
+    height: 1000px;
+    width: 100%;
+    margin-top: -10px;    /* can minimize the gap when scrolling up and down */
+    background-color: $maincolor1;
+    position: relative;
+    z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+    #content-title {
+        padding:60px;
+        color:$maincolor2;
+        font-size: 3em;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #content-title {
+        padding:80px;
+        color:$maincolor2;
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+/*** Profile Page ***/
