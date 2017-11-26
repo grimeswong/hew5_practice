@@ -1,9 +1,11 @@
-/*** 
+/***
+    StyleSheet.scss
     Author: Shadow Grimes
 
 
 ***/
 /* Colour */
+/* Fonts */
 /* First setting clear the user agent default setting */
 /* reset to "0" to avoid broswer setting */
 * {
@@ -14,17 +16,38 @@
 .container {
   margin: 0px auto; }
 
-.header {
-  height: 50px;
-  background-color: white;
-  width: 100%;
-  position: fixed;
-  z-index: 2; }
-  .header h4 {
-    padding: 5px;
-    color: #49075e;
-    float: left; }
+/* Header */
+@media screen and (min-width: 768px) {
+  .header {
+    height: 50px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 2; }
+    .header p {
+      padding: 10px;
+      color: #49075e;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 1em;
+      float: left; } }
 
+@media screen and (max-width: 767px) {
+  .header {
+    height: 50px;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 2; }
+    .header p {
+      padding: 10px;
+      color: #49075e;
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 0.8em;
+      float: left; } }
+
+/* Content */
 @media screen and (min-width: 768px) {
   #image {
     height: 700px;
@@ -91,7 +114,7 @@
     color: #49075e;
     text-align: center; } }
 
-#content {
+.main-content {
   height: 1000px;
   width: 100%;
   margin-top: -10px;
@@ -101,19 +124,28 @@
   z-index: 1; }
 
 @media screen and (min-width: 768px) {
-  #content-title {
+  .main-content .main-content-title {
     padding: 60px;
     color: white;
     font-size: 3em;
     font-weight: bold;
+    text-align: center; }
+  .main-content .main-content-subtitle {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
     text-align: center; } }
 
 @media screen and (max-width: 767px) {
-  #content-title {
+  .main-content-title {
     padding: 80px;
     color: white;
     font-size: 2em;
     font-weight: bold;
     text-align: center; } }
+
+label {
+  color: white;
+  font-weight: bold; }
 
 /*** Profile Page ***/

@@ -1,4 +1,5 @@
-/*** 
+/***
+    StyleSheet.scss
     Author: Shadow Grimes
 
 
@@ -12,6 +13,9 @@ $titlebackground: rgba(255,255,255,0.7); // white with opacity
 $bordercolor: rgba(73, 7, 94, 0.7);    // purple with opacity
 $boxshadow: $bordercolor;
 
+/* Fonts */
+$mainfont1: Helvetica;
+$mainfont2: Arial;
 
 $fullwidth: 100%;
 
@@ -28,19 +32,44 @@ $fullwidth: 100%;
     margin:0px auto;
 }
 
-.header {
-    height:50px;
-    background-color:$maincolor2;
-    width: $fullwidth;
-    position: fixed;
-    z-index: 2;
-    h4 {
-        padding: 5px;
-        color:$maincolor1;
-        float:left;
-    }
+/* Header */
+@media screen and(min-width: 768px) {
+  .header {
+      height:50px;
+      background-color:$maincolor2;
+      width: $fullwidth;
+      position: fixed;
+      z-index: 2;
+      p {
+          padding: 10px;
+          color:$maincolor1;
+          font-family: $mainfont1, sans-serif;
+          font-weight: bold;
+          font-size: 1em;
+          float:left;
+      }
+  }
 }
 
+@media screen and(max-width: 767px) {
+  .header {
+      height:50px;
+      background-color:$maincolor2;
+      width: $fullwidth;
+      position: fixed;
+      z-index: 2;
+      p {
+          padding: 10px;
+          color:$maincolor1;
+          font-family: $mainfont1, sans-serif;
+          font-weight: bold;
+          font-size: 0.8em;
+          float:left;
+      }
+  }
+}
+
+/* Content */
 @media screen and(min-width: 768px) {
     #image {
         height:700px;
@@ -119,7 +148,7 @@ $fullwidth: 100%;
     }
 }
 
-#content {
+.main-content {
     height: 1000px;
     width: 100%;
     margin-top: -10px;    /* can minimize the gap when scrolling up and down */
@@ -129,23 +158,36 @@ $fullwidth: 100%;
 }
 
 @media screen and (min-width: 768px) {
-    #content-title {
+    .main-content {
+      .main-content-title {
         padding:60px;
         color:$maincolor2;
         font-size: 3em;
         font-weight: bold;
         text-align: center;
+      }
+      .main-content-subtitle {
+        color: $maincolor2;
+        font-size: 2em;
+        font-weight: bold;
+        text-align: center;
+      }
     }
 }
 
 @media screen and (max-width: 767px) {
-    #content-title {
+    .main-content-title {
         padding:80px;
         color:$maincolor2;
         font-size: 2em;
         font-weight: bold;
         text-align: center;
     }
+}
+
+label {
+  color: $maincolor2;
+  font-weight: bold;
 }
 
 /*** Profile Page ***/
