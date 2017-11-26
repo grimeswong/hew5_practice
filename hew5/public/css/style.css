@@ -135,6 +135,7 @@
     text-align: center; } }
 
 .main-content {
+  min-height: 800px;
   margin-top: -10px;
   /* can minimize the gap when scrolling up and down */
   margin-bottom: 40px;
