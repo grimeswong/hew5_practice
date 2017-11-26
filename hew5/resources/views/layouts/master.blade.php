@@ -4,8 +4,8 @@
       <title>@yield('title')</title>
       <meta charset="UTF-8">  <!-- charset setting -->
        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- responsive setting, it doesn't spread the content that use all width -->
-       <!-- <link rel="stylesheet" href="style.css"> <!-- external css file -->
-       <link rel="stylesheet" type="text/css" href="{{secure_asset('css/sytle.css')}}">
+       <!-- <link rel="stylesheet" href="style.css"> --> <!-- external css file -->
+       <link rel="stylesheet" type="text/css" href="css/style.css">
 
        <!-- Bootstrap CDN link -->
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -17,4 +17,16 @@
     <body>
          @yield('content')
     </body>
-</htmlasdf>
+</html>
+
+<script type="text/javascript">
+  var ypos, image;
+  function parallex () {
+      ypos = window.pageYOffset;
+      image = document.getElementById('image');
+      image.style.top = ypos * .8 + 'px'; //don't go above 1
+  }
+
+  //when window detect the user is scrolling, call the function parallex
+  window.addEventListener('scroll', parallex)  // first parameter is event, second parameter is the function call
+</script>
