@@ -19,7 +19,7 @@
                 <p class="main-content-title">Researcher Profile</p>
                 <p class="main-content-subtitle">Please enter your profile details<p>
 
-                  <form class="col-sm-8" id="profile-form" method="GET" action="">  <!-- need to change POST later -->
+                  <form class="col-sm-8" id="profile-form" method="GET" action="#">  <!-- need to change POST later -->
 
                     <div class="row">
                       <div class="form-group col-sm-6">
@@ -53,7 +53,7 @@
                     <div class="row">
                       <div class="form-group col-sm-12">
                         <label class="control-label">Profile Image</label>
-                        <input type="file" class="form-control-file">
+                        <input type="file" class="form-control-file" id="file-upload">
                     </div>
 
                     <button class="btn btn-success btn-lg offset-md-3 col-sm-12 col-md-6">Submit</button>
