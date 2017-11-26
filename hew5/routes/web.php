@@ -16,5 +16,13 @@ Route::get('/', function () {
 });
 
 Route::post('add_profile_action', function () {
+    $firstname = request('firstName');
+    $lastname = request('lastName');
+    $position = request('position');
+    $email = request('email');
+    $biography = request('biography');
+    $image = request('image');
+    // dd($image);   //debugger
+
     return view('profile');
 });
