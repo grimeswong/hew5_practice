@@ -135,10 +135,10 @@
     text-align: center; } }
 
 .main-content {
-  min-height: 1000px;
-  width: 100%;
   margin-top: -10px;
   /* can minimize the gap when scrolling up and down */
+  margin-bottom: 40px;
+  width: 100%;
   background-color: #49075e;
   position: relative;
   z-index: 1; }
@@ -191,3 +191,69 @@ label {
 
 
 ***          ***/
+.profile-block {
+  background-color: white;
+  border: 5px solid grey; }
+
+@media screen and (min-width: 1200px) {
+  .profile-image {
+    padding: 40px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; } }
+
+@media screen and (max-width: 1199px) {
+  .profile-image {
+    padding: 30px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; } }
+
+.row-space {
+  padding: 20px 40px;
+  text-align: left;
+  font-weight: bold; }
+
+.row-message {
+  padding: 10px 40px;
+  text-align: left; }
+
+.big-name {
+  font-family: Helvetica, serif;
+  font-size: 2.5em;
+  font-weight: bold; }
+
+#position {
+  font-family: Helvetica, serif;
+  font-size: 1em;
+  font-weight: bold; }
+
+#email {
+  text-align: left;
+  font-family: Helvetica, serif;
+  font-size: 1em;
+  color: #203edc; }
+
+#bio-title {
+  font-family: Helvetica, serif;
+  font-size: 1.5em;
+  font-weight: bold; }
+
+#bio-message {
+  font-family: Helvetica, serif;
+  font-size: 1em; }
+
+/***    ***
+
+    footer
+
+***      ***/
+.footer {
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.8em;
+  background-color: white;
+  color: black; }

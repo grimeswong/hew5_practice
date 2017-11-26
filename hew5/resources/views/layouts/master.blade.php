@@ -20,7 +20,10 @@
       </div> <!-- end of header -->
 
       @yield('content')
-      
+
+      <div class="footer">
+          copyright 2017
+      </div>
     </body>
 </html>
 

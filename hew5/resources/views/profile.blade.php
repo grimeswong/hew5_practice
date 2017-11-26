@@ -15,7 +15,32 @@
 
 <div class="main-content">
     <p class="main-content-title">Researcher Profile</p>
-    
+
+    <div class="row">
+      <div class="offset-md-2 col-md-8 col-sm-12">
+          <div class="profile-block">
+            <div class="row">
+              <div class="col-md-3">
+                <img class="profile-image" src="/img/grimes.jpg" alt="profile image">
+              </div>
+              <div class="col-md-9">
+                <div class="row row-space big-name">
+                    {{$firstname}} {{$lastname}}
+                </div>
+                <div class="row row-space">
+                    {{$position}} | {{$email}}
+                </div>
+                <div class="row row-space">
+                    Biography
+                </div>
+                <div class="row row-message">
+                    {{$biography}}
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
 <div>
 
 
