@@ -5,7 +5,7 @@
       <meta charset="UTF-8">  <!-- charset setting -->
        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- responsive setting, it doesn't spread the content that use all width -->
        <!-- <link rel="stylesheet" href="style.css"> --> <!-- external css file -->
-       <link rel="stylesheet" type="text/css" href="css/style.css">
+       <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
 
        <!-- Bootstrap CDN link -->
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">

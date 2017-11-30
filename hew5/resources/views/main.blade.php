@@ -56,8 +56,16 @@
                       </div>
                     </div>
 
-                    <button class="btn btn-success btn-lg offset-md-1 col-md-4 offset-sm-1 col-sm-10 ">Submit</button>
-                    <a class="btn btn-secondary btn-lg col-md-4 offset-sm-1 col-sm-10  btn-top" href="/">Cancel</a>
+                    <div class="row">
+                      <div class="form-group col-sm-6">
+                        <button class="btn btn-success btn-lg col-md-12">Submit</button>
+                        <!-- <button class="btn btn-success btn-lg offset-md-1 col-md-4 offset-sm-1 col-sm-10 ">Submit</button> -->
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <a class="btn btn-secondary btn-lg col-md-12" href="/">Cancel</a>
+                        <!-- <a class="btn btn-secondary btn-lg col-md-4 offset-sm-1 col-sm-10  btn-top" href="/">Cancel</a> -->
+                      </div>
+                    </div>
                   </form>
             </div>
 

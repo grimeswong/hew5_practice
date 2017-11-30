@@ -180,11 +180,6 @@ label {
 .form-control-file {
   color: white; }
 
-@media screen and (max-width: 767px) {
-  .btn-top {
-    margin-top: 15px;
-    margin-bottom: 50px; } }
-
 /***         ***
 
 
