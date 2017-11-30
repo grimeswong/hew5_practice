@@ -29,12 +29,12 @@
 
 <script type="text/javascript">
   var ypos, image;
-  function parallex () {
+  function parallax () {
       ypos = window.pageYOffset;
       image = document.getElementById('image');
       image.style.top = ypos * .8 + 'px'; //don't go above 1
   }
 
-  //when window detect the user is scrolling, call the function parallex
-  window.addEventListener('scroll', parallex)  // first parameter is event, second parameter is the function call
+  //when window detect the user is scrolling, call the function parallax
+  window.addEventListener('scroll', parallax)  // first parameter is event, second parameter is the function call
 </script>
